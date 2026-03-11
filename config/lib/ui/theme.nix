@@ -1,10 +1,14 @@
 
 
 {
-  # One Dark Pro color scheme
-  # ref: https://github.com/olimorris/onedarkpro.nvim
+  # One Dark color scheme
   colorschemes.onedark = {
     enable = true;
-    settings.style = "onedark";
+    settings = {
+      style = "dark";
+      transparent = true;
+      term_colors = true;
+      ending_tildes = false;
+    };
   };
 }
