@@ -6,5 +6,5 @@
   colorschemes.onedark = {
     enable = true;
     settings.style = "onedark";
-  }
+  };
 }
