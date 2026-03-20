@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # nvim-lspconfig (via NixVim)
   # reference: https://github.com/neovim/nvim-lspconfig
@@ -161,8 +162,14 @@
   plugins.flutter-tools = {
     enable = true;
     settings = {
-      flutter_path = "flutter";
+      flutter_path = "${pkgs.flutter}/bin/flutter";
       lsp = {
+        cmd = [
+          "${pkgs.flutter}/bin/flutter"
+          "dart"
+          "language-server"
+          "protocol=lsp"
+        ];
         color = {
           enabled = true;
         };
