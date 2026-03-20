@@ -166,7 +166,6 @@
       lsp = {
         cmd = [
           "${pkgs.flutter}/bin/flutter"
-          "dart"
           "language-server"
           "protocol=lsp"
         ];
